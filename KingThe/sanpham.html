@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giày Thể Thao Nam KingThe - Pro Runner</title>
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.7) !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: scale(1.05);
+        }
+
+        /* Product Image Gallery */
+        .product-image {
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.02);
+        }
+
+        .thumbnail-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .product-thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            opacity: 0.6;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .product-thumbnail:hover, .product-thumbnail.active {
+            opacity: 1;
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Product Details */
+        .product-details {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-details:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+
+        .price .h3 {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .rating {
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        /* Color and Size Selection */
+        .color-option {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .color-option:hover, .color-option.selected {
+            border-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        .size-btn {
+            width: 60px;
+            margin: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .size-btn:hover, .size-btn.active {
+            background-color: var(--secondary-color);
+            color: white !important;
+        }
+
+        /* Action Buttons */
+        .action-buttons .btn {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 12px 24px;
+            transition: all 0.3s ease;
+        }
+
+        .action-buttons .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(0,0,0,0.1);
+        }
+
+        .action-buttons .btn i {
+            margin-right: 10px;
+        }
+
+        /* Product Description */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .card-body ul {
+            padding-left: 20px;
+        }
+
+        .card-body li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color) !important;
+            color: rgba(255,255,255,0.8);
+            padding: 30px 0;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Copy the entire body content from the original HTML document -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/icon.jpg" width="50" height="50" class="d-inline-block align-top rounded-circle" alt="KingThe Logo">
+                KingThe Shoes
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Giày Nam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giày Nữ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giỏ Hàng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Container -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image Gallery -->
+            <div class="col-md-6">
+                <div class="main-image mb-3">
+                    <img src="images/g1.jpg" class="img-fluid product-image w-100" id="mainProductImage" alt="Giày Thể Thao Nam KingThe">
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="images/g11.jpg" class="img-thumbnail product-thumbnail active" data-image="images/g11.jpg" alt="Ảnh 1">
+                    <img src="images/g12.jpg" class="img-thumbnail product-thumbnail" data-image="images/g12.jpg" alt="Ảnh 2">
+                    <img src="images/g13.jpg" class="img-thumbnail product-thumbnail" data-image="images/g13.jpg" alt="Ảnh 3">
+                </div>
+            </div>
+
+            <!-- Rest of the page remains the same -->
+            <!-- Product Details section -->
+            <div class="col-md-6">
+                <div class="product-details">
+                    <h1 class="mb-3">Giày Thể Thao Nam KingThe Pro Runner</h1>
+                    
+                    <!-- Price and Rating -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="price">
+                            <span class="h3 text-danger mr-3">650,000 VND</span>
+                            <small class="text-muted"><del>800,000 VND</del></small>
+                        </div>
+                        <div class="rating text-warning">
+                            ★★★★☆ (45 đánh giá)
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selection mb-3">
+                        <h5>Màu Sắc:</h5>
+                        <div class="d-flex">
+                            <div class="color-option selected" style="background-color: white;"></div>
+                            <div class="color-option" style="background-color: #2f2f4a;"></div>
+                            <div class="color-option" style="background-color: #808080;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selection mb-3">
+                        <h5>Kích Thước:</h5>
+                        <div>
+                            <button class="btn btn-outline-secondary size-btn">39</button>
+                            <button class="btn btn-outline-secondary size-btn">40</button>
+                            <button class="btn btn-outline-secondary size-btn active">41</button>
+                            <button class="btn btn-outline-secondary size-btn">42</button>
+                            <button class="btn btn-outline-secondary size-btn">43</button>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Options -->
+                    <div class="purchase-options mb-3">
+                        <div class="form-group">
+                            <label for="quantity">Số Lượng:</label>
+                            <input type="number" class="form-control" id="quantity" value="1" min="1" max="10">
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary btn-lg mr-3">
+                            <i class="fa fa-shopping-cart"></i> Thêm Vào Giỏ
+                        </button>
+                        <button class="btn btn-success btn-lg">
+                            <i class="fa fa-credit-card"></i> Mua Ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rest of the page remains the same -->
+        <!-- Product Description section continues -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-3">Mô Tả Sản Phẩm</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Giày Thể Thao Nam KingThe Pro Runner</h5>
+                        <p>Giày thể thao Pro Runner được thiết kế dành riêng cho những vận động viên chuyên nghiệp và những người yêu thích hoạt động thể chất. Với công nghệ đế chống sốc tiên tiến, giày mang lại trải nghiệm êm ái và thoải mái tối đa.</p>
+                        
+                        <h6>Đặc Điểm Nổi Bật:</h6>
+                        <ul>
+                            <li>Chất liệu vải mesh cao cấp, thoáng khí</li>
+                            <li>Đế cao su non chống trơn trượt</li>
+                            <li>Công nghệ đệm khí giảm chấn</li>
+                            <li>Thiết kế nhẹ và linh hoạt</li>
+                            <li>Phù hợp cho chạy bộ, tập gym và các hoạt động thể thao</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 KingThe Shoes. Đã đăng ký bản quyền.</p>
+            <p>Hotline: 0123 456 789 | Email: support@kingtheshoes.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4.6 JS and dependencies -->
+    <script src="asset/jquery/jquery.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- The HTML structure remains the same, but will now be styled with the new CSS -->
+</body>
+</html>

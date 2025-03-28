@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - KingThe Shoes</title>
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: white !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.7) !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: scale(1.05);
+        }
+
+        /* Contact Page Specific Styles */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-info {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            color: var(--secondary-color);
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(52,152,219,0.25);
+        }
+
+        .btn-contact {
+            background-color: var(--secondary-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .contact-map {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--primary-color) !important;
+            color: rgba(255,255,255,0.8);
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icon.jpg" width="50" height="50" class="d-inline-block align-top rounded-circle" alt="KingThe Logo">
+                KingThe Shoes
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nữ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khuyến Mãi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-section container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h3 class="mb-4">Thông Tin Liên Hệ</h3>
+                    <div class="mb-3">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-phone contact-icon"></i>
+                        Điện thoại: 0123 456 789
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        Email: contact@kingtheshoes.com
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-clock contact-icon"></i>
+                        Giờ làm việc: 8:00 - 22:00 (Thứ 2 - Chủ Nhật)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h3 class="mb-4">Gửi Tin Nhắn Cho Chúng Tôi</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và Tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Địa Chỉ Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Số Điện Thoại">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Nội Dung Tin Nhắn" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-contact btn-block">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps Placeholder -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4635136839546!2d106.68281331462096!3d10.77630876228938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b888d8bdb%3A0x5a462e4e0f0daf07!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBCw6FjaCBraG9hIC0gxJDhuqFpIGhvw6BuZyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1625876400000!5m2!1svi!2s" 
+                    class="contact-map" 
+                    frameborder="0" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Về Chúng Tôi</h5>
+                    <p>KingThe Shoes - Thương hiệu giày uy tín hàng đầu Việt Nam</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên Hệ</h5>
+                    <p>Điện thoại: 0123 456 789<br>Email: contact@kingtheshoes.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Theo Dõi Chúng Tôi</h5>
+                    <div>
+                        <a  href="#" class="text-white mx-2"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p>&copy; 2024 KingThe Shoes. Đã đăng ký bản quyền.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4.6 JS và dependencies -->
+    <script src="asset/jquery/jquery.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
